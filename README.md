@@ -20,7 +20,7 @@ And the last arguments can be the script with the arguments to be called.
 
 ### in scripts #!
 ```
-#!/usr/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
+#!/usr/local/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
 ```
 
 ### direct usage
@@ -34,7 +34,7 @@ The defined args would then be available as capitalized envirionment variables w
 This example shows how `argparse` can be used as a `#!` in a `bash` script for commandline parsing. The following file is named `printname.sh`.
 
 ```
-#!/usr/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
+#!/usr/local/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
 
 echo "This program prints names passed to the argument --name."
 echo "Name: ${ARG_NAME}"
