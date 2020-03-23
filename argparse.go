@@ -2,10 +2,10 @@
 // (Bash | Python | Perl)
 //
 // Usage (direct):
-// 	argparse --executor=/bin/bash --arg name::No Name Defined::Name printname.sh
+// 	argparse --executor=/bin/bash --arg=name::NoNameDefined::Name printname.sh --name Sreejith
 //
 // Usage (as shebang in the script)
-//	#!/usr/bin/argparse --executor=/bin/bash --arg name::No Name Defined::Name
+//	#!/usr/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
 //
 // The arguments are then exported as environment variables within the script
 // 	$ARG_NAME
