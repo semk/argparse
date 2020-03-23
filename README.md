@@ -1,14 +1,25 @@
 # argparse
 Simple and elegant command line argument parser for scripts that can be used as a shebang (Bash | Python | Perl etc.)
 
-## Usage (shebang)
+## Usage
+```
+Usage of ./argparse:
+  -arg value
+    	Define custom argument to the program.
+  -executor string
+    	Path to the script executor (set this to shebang (#!)) (default "/bin/bash")
+```
+
+And the last arguments can be the script with the arguments to be called.
+
+### used as a shebang
 ```
 #!/usr/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
 ```
 
-## Usage (direct)
+### direct usage
 ```
-argparse --executor=/bin/bash --arg=name::NoNameDefined::Name printname.sh
+argparse --executor=/bin/bash --arg=name::NoNameDefined::Name printname.sh --name Sreejith
 ```
 
 The defined args would then be available as capitalized envirionment variables with the `ARG_<OPTION_NAME>` format.
