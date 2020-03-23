@@ -14,8 +14,9 @@ argparse --executor=/bin/bash --arg=name::NoNameDefined::Name printname.sh
 The defined args would then be available as capitalized envirionment variables with the `ARG_<OPTION_NAME>` format.
 
 ## Example
+This example shows how `argparse` can be used as a `#!` in a `bash` script for commandline parsing. The following file is named `printname.sh`.
+
 ```
-$ cat printname.sh 
 #!/usr/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
 
 echo "This program prints names passed to the argument --name."
