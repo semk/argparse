@@ -11,7 +11,7 @@ cp $(go env GOPATH)/bin/argparse /usr/local/bin
 ```
 Usage of ./argparse:
   -arg value
-    	Define custom argument to the program.
+    	Define custom argument to the program. Format: name::default:desc
   -executor string
     	Path to the script executor (set this to shebang (#!)) (default "/bin/bash")
 ```
