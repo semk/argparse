@@ -18,8 +18,8 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"syscall"
 	"strings"
+	"syscall"
 )
 
 const SEP = "::"
@@ -48,13 +48,18 @@ func main() {
 		"Path to the script executor (set this to shebang (#!))")
 
 	var argPatterns argFlags
-	flag.Var(&argPatterns, "arg", "Define custom argument to the program.")
+	flag.Var(
+		&argPatterns,
+		"arg",
+		"Define custom argument to the program. Format: name::default:desc")
 
 	// Parse the flags passed to argparse utility
 	flag.Parse()
 
 	// Get the script to be executed with the flags passed to the script
 	originalScriptWithArgs := flag.Args()
+	fmt.Println(originalScriptWithArgs)
+	fmt.Println(argPatterns)
 
 	// Define the script flags
 	scriptFlagSet := flag.NewFlagSet(originalScriptWithArgs[0], flag.ExitOnError)
