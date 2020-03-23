@@ -12,7 +12,7 @@ Usage of ./argparse:
 
 And the last arguments can be the script with the arguments to be called.
 
-### used as a shebang
+### in scripts #!
 ```
 #!/usr/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
 ```
