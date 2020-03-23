@@ -1,6 +1,12 @@
 # argparse
 Simple and elegant command line argument parser for scripts that can be used as a shebang (Bash | Python | Perl etc.)
 
+## Installation
+```
+go get github.com/semk/argparse
+cp $(go env GOPATH)/bin/argparse /usr/local/bin
+```
+
 ## Usage
 ```
 Usage of ./argparse:
