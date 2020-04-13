@@ -1,16 +1,20 @@
-// Simple and elegant argument parser for scripts that can be used as a shebang
-// (Bash | Python | Perl)
-//
-// Usage (direct):
-// 	argparse --executor=/bin/bash --arg=name::NoNameDefined::Name printname.sh --name Sreejith
-//
-// Usage (as shebang in the script)
-//	#!/usr/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
-//
-// The arguments are then exported as environment variables within the script
-// 	$ARG_NAME
-//
-// Author: Sreejith Kesavan <sreejithemk@gmail.com>
+/********************************************************************************************
+ *
+ * Simple and elegant argument parser for scripts that can be used as a shebang
+ * (Bash | Python | Perl)
+ *
+ * Usage (direct):
+ * 	argparse --executor=/bin/bash --arg=name::NoNameDefined::Name printname.sh --name Sreejith
+ *
+ * Usage (as shebang in the script)
+ *	#!/usr/bin/argparse --executor=/bin/bash --arg=name::NoNameDefined::Name
+ *
+ * The arguments are then exported as environment variables within the script
+ * 	$ARG_NAME
+ *
+ * Author: Sreejith Kesavan <sreejithemk@gmail.com>
+ *
+ **********************************************************************************************/
 
 package main
 
