@@ -62,8 +62,11 @@ func main() {
 
 	// Get the script to be executed with the flags passed to the script
 	originalScriptWithArgs := flag.Args()
-	fmt.Println(originalScriptWithArgs)
-	fmt.Println(argPatterns)
+
+	if len(originalScriptWithArgs) == 0 {
+		flag.PrintDefaults()
+		os.Exit(1)
+	}
 
 	// Define the script flags
 	scriptFlagSet := flag.NewFlagSet(originalScriptWithArgs[0], flag.ExitOnError)
